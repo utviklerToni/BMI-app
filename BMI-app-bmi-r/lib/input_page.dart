@@ -8,6 +8,7 @@ import './widgets/reusable_card.dart';
 import './widgets/custom_icon.dart';
 import './constant/my_custom_constants.dart';
 import './widgets/round_icon_button.dart';
+import './widgets/menu_drawer.dart';
 
 enum GenderType { male, female }
 
@@ -25,6 +26,7 @@ class _InputPageState extends State<InputPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: MenuDrawer(),
       appBar: AppBar(
         title: Text('BMI App'),
       ),
