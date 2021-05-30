@@ -28,7 +28,7 @@ class _InputPageState extends State<InputPage> {
     return Scaffold(
       drawer: MenuDrawer(),
       appBar: AppBar(
-        title: Text('BMI App'),
+        title: Text('BMI calculator'),
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
