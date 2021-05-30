@@ -1,6 +1,8 @@
 # BMI_app
 
-a simple BMI calculator and a mini calculator
+a simple BMI calculator and a calculator
+
+adding some calculator functionality
 
 A new Flutter project.
 
