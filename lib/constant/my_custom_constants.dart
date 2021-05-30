@@ -7,6 +7,7 @@ const kInactiveCardColor = Color(0xFF021026);
 const kBottomContainerColor = Color(0xFF00CA82);
 const kTextColor = Color(0xFF0A0E21);
 const kReCalculateButton = Color(0xFF573D7A);
+const kCanvasColor = Color(0xFF021026);
 
 const kLabelTextStyle = TextStyle(fontSize: 18);
 const kIconSize = 54.0;

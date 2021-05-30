@@ -1,9 +1,10 @@
+import 'package:flutter/material.dart';
+
 import 'package:bmi_app/constant/my_custom_constants.dart';
 import 'package:bmi_app/widgets/bottom_button.dart';
 import 'package:bmi_app/widgets/reusable_card.dart';
-import 'package:flutter/material.dart';
 
-import '../widgets/menu_drawer.dart';
+// import '../widgets/menu_drawer.dart';
 
 class ResultPage extends StatelessWidget {
   ResultPage({
@@ -18,7 +19,7 @@ class ResultPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: MenuDrawer(),
+      // drawer: MenuDrawer(),
       appBar: AppBar(
         title: Text('BMI calculator'),
       ),

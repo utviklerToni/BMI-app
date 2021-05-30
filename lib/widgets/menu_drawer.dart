@@ -1,3 +1,5 @@
+import 'package:bmi_app/screens/calculator_screen.dart';
+import 'package:bmi_app/screens/metrics_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../constant/my_custom_constants.dart';
@@ -12,6 +14,7 @@ class MenuDrawer extends StatelessWidget {
       title: Text(
         title,
         style: TextStyle(
+            color: Color(0xFF573D7A),
             // fontFamily: 'RobotoCondensed',
             fontSize: 24,
             fontWeight: FontWeight.bold),
@@ -23,6 +26,7 @@ class MenuDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
+      elevation: 32,
       child: Column(
         children: [
           Container(
@@ -40,12 +44,36 @@ class MenuDrawer extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(
-            height: 21,
-          ),
           buildListTile('BMI calculator', Icons.healing, () {
             Navigator.of(context).pushReplacementNamed('/');
           }),
+          // buildListTile('calculator', Icons.calculate, () {
+          //   Navigator.of(context).pushReplacementNamed('/maths-calculator');
+          // }),
+          buildListTile(
+            'Maths Calculator',
+            Icons.calculate,
+            () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => CalculatorScreen(),
+                ),
+              );
+            },
+          ),
+          buildListTile(
+            'Metrics Converter',
+            Icons.sync,
+            () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => MetricsConverter(),
+                ),
+              );
+            },
+          ),
         ],
       ),
     );
